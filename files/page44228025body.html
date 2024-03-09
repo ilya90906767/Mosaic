@@ -1,0 +1,681 @@
+<!--allrecords--><div id="allrecords" data-tilda-export="yes" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="8695563" data-tilda-page-id="44228025" data-tilda-page-alias="1" data-tilda-formskey="3646a53f00743b4f73e0054c28695563" data-tilda-cookie="no" data-tilda-lazy="yes" data-tilda-root-zone="com" ><div id="rec710220242" class="r t-rec" style=" " data-animationappear="off" data-record-type="257" ><!-- T228 --><div id="nav710220242marker"></div><div class="tmenu-mobile" ><div class="tmenu-mobile__container"><div class="tmenu-mobile__text t-name t-name_md" field="menu_mob_title">&nbsp;</div><button type="button" 
+class="t-menuburger t-menuburger_first " 
+aria-label="Навигационное меню" 
+aria-expanded="false"><span style="background-color:#fff;"></span><span style="background-color:#fff;"></span><span style="background-color:#fff;"></span><span style="background-color:#fff;"></span></button><script>function t_menuburger_init(recid) {
+var rec = document.querySelector('#rec' + recid);
+if (!rec) return;
+var burger = rec.querySelector('.t-menuburger');
+if (!burger) return;
+var isSecondStyle = burger.classList.contains('t-menuburger_second');
+if (isSecondStyle && !window.isMobile && !('ontouchend' in document)) {
+burger.addEventListener('mouseenter', function() {
+if (burger.classList.contains('t-menuburger-opened')) return;
+burger.classList.remove('t-menuburger-unhovered');
+burger.classList.add('t-menuburger-hovered');
+});
+burger.addEventListener('mouseleave', function() {
+if (burger.classList.contains('t-menuburger-opened')) return;
+burger.classList.remove('t-menuburger-hovered');
+burger.classList.add('t-menuburger-unhovered');
+setTimeout(function() {
+burger.classList.remove('t-menuburger-unhovered');
+}, 300);
+});
+}
+burger.addEventListener('click', function() {
+if (!burger.closest('.tmenu-mobile') &&
+!burger.closest('.t450__burger_container') &&
+!burger.closest('.t466__container') &&
+!burger.closest('.t204__burger') &&
+!burger.closest('.t199__js__menu-toggler')) {
+burger.classList.toggle('t-menuburger-opened');
+burger.classList.remove('t-menuburger-unhovered');
+}
+});
+var menu = rec.querySelector('[data-menu="yes"]');
+if (!menu) return;
+var menuLinks = menu.querySelectorAll('.t-menu__link-item');
+var submenuClassList = ['t978__menu-link_hook', 't978__tm-link', 't966__tm-link', 't794__tm-link', 't-menusub__target-link'];
+Array.prototype.forEach.call(menuLinks, function (link) {
+link.addEventListener('click', function () {
+var isSubmenuHook = submenuClassList.some(function (submenuClass) {
+return link.classList.contains(submenuClass);
+});
+if (isSubmenuHook) return;
+burger.classList.remove('t-menuburger-opened');
+});
+});
+menu.addEventListener('clickedAnchorInTooltipMenu', function () {
+burger.classList.remove('t-menuburger-opened');
+});
+}
+t_onReady(function() {
+t_onFuncLoad('t_menuburger_init', function(){t_menuburger_init('710220242');});
+});</script><style>.t-menuburger {
+position: relative;
+flex-shrink: 0;
+width: 28px;
+height: 20px;
+padding: 0;
+border: none;
+background-color: transparent;
+outline: none;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+transition: transform .5s ease-in-out;
+cursor: pointer;
+z-index: 999;
+}
+/*---menu burger lines---*/
+.t-menuburger span {
+display: block;
+position: absolute;
+width: 100%;
+opacity: 1;
+left: 0;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+transition: .25s ease-in-out;
+height: 3px;
+background-color: #000;
+}
+.t-menuburger span:nth-child(1) {
+top: 0px;
+}
+.t-menuburger span:nth-child(2),
+.t-menuburger span:nth-child(3) {
+top: 8px;
+}
+.t-menuburger span:nth-child(4) {
+top: 16px;
+}
+/*menu burger big*/
+.t-menuburger__big {
+width: 42px;
+height: 32px;
+}
+.t-menuburger__big span {
+height: 5px;
+}
+.t-menuburger__big span:nth-child(2),
+.t-menuburger__big span:nth-child(3) {
+top: 13px;
+}
+.t-menuburger__big span:nth-child(4) {
+top: 26px;
+}
+/*menu burger small*/
+.t-menuburger__small {
+width: 22px;
+height: 14px;
+}
+.t-menuburger__small span {
+height: 2px;
+}
+.t-menuburger__small span:nth-child(2),
+.t-menuburger__small span:nth-child(3) {
+top: 6px;
+}
+.t-menuburger__small span:nth-child(4) {
+top: 12px;
+}
+/*menu burger opened*/
+.t-menuburger-opened span:nth-child(1) {
+top: 8px;
+width: 0%;
+left: 50%;
+}
+.t-menuburger-opened span:nth-child(2) {
+-webkit-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+.t-menuburger-opened span:nth-child(3) {
+-webkit-transform: rotate(-45deg);
+transform: rotate(-45deg);
+}
+.t-menuburger-opened span:nth-child(4) {
+top: 8px;
+width: 0%;
+left: 50%;
+}
+.t-menuburger-opened.t-menuburger__big span:nth-child(1) {
+top: 6px;
+}
+.t-menuburger-opened.t-menuburger__big span:nth-child(4) {
+top: 18px;
+}
+.t-menuburger-opened.t-menuburger__small span:nth-child(1),
+.t-menuburger-opened.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+/*---menu burger first style---*/
+@media (hover), (min-width:0\0) {
+.t-menuburger_first:hover span:nth-child(1) {
+transform: translateY(1px);
+}
+.t-menuburger_first:hover span:nth-child(4) {
+transform: translateY(-1px);
+}
+.t-menuburger_first.t-menuburger__big:hover span:nth-child(1) {
+transform: translateY(3px);
+}
+.t-menuburger_first.t-menuburger__big:hover span:nth-child(4) {
+transform: translateY(-3px);
+}
+}
+/*---menu burger second style---*/
+.t-menuburger_second span:nth-child(2),
+.t-menuburger_second span:nth-child(3) {
+width: 80%;
+left: 20%;
+right: 0;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_second.t-menuburger-hovered span:nth-child(2),
+.t-menuburger_second.t-menuburger-hovered span:nth-child(3) {
+animation: t-menuburger-anim 0.3s ease-out normal forwards;
+}
+.t-menuburger_second.t-menuburger-unhovered span:nth-child(2),
+.t-menuburger_second.t-menuburger-unhovered span:nth-child(3) {
+animation: t-menuburger-anim2 0.3s ease-out normal forwards;
+}
+}
+.t-menuburger_second.t-menuburger-opened span:nth-child(2),
+.t-menuburger_second.t-menuburger-opened span:nth-child(3){
+left: 0;
+right: 0;
+width: 100%!important;
+}
+/*---menu burger third style---*/
+.t-menuburger_third span:nth-child(4) {
+width: 70%;
+left: unset;
+right: 0;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_third:not(.t-menuburger-opened):hover span:nth-child(4) {
+width: 100%;
+}
+}
+.t-menuburger_third.t-menuburger-opened span:nth-child(4) {
+width: 0!important;
+right: 50%;
+}
+/*---menu burger fourth style---*/
+.t-menuburger_fourth {
+height: 12px;
+}
+.t-menuburger_fourth.t-menuburger__small {
+height: 8px;
+}
+.t-menuburger_fourth.t-menuburger__big {
+height: 18px;
+}
+.t-menuburger_fourth span:nth-child(2),
+.t-menuburger_fourth span:nth-child(3) {
+top: 4px;
+opacity: 0;
+}
+.t-menuburger_fourth span:nth-child(4) {
+top: 8px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+top: 3px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+top: 3px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__big span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__big span:nth-child(3) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__big span:nth-child(4) {
+top: 12px;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(1) {
+transform: translateY(1px);
+}
+.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(4) {
+transform: translateY(-1px);
+}
+.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(1) {
+transform: translateY(3px);
+}
+.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(4) {
+transform: translateY(-3px);
+}
+}
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(1),
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(4) {
+top: 4px;
+}
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(2),
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(3) {
+opacity: 1;
+}
+/*---menu burger animations---*/
+@keyframes t-menuburger-anim {
+0% {
+width: 80%;
+left: 20%;
+right: 0;
+}
+50% {
+width: 100%;
+left: 0;
+right: 0;
+}
+100% {
+width: 80%;
+left: 0;
+right: 20%;
+}
+}
+@keyframes t-menuburger-anim2 {
+0% {
+width: 80%;
+left: 0;
+}
+50% {
+width: 100%;
+right: 0;
+left: 0;
+}
+100% {
+width: 80%;
+left: 20%;
+right: 0;
+}
+}</style> </div></div><style>.tmenu-mobile {
+background-color: #111;
+display: none;
+width: 100%;
+top: 0;
+z-index: 990;
+}
+.tmenu-mobile_positionfixed {
+position: fixed;
+}
+.tmenu-mobile__text {
+color: #fff;
+}
+.tmenu-mobile__container {
+min-height: 64px;
+padding: 20px;
+position: relative;
+box-sizing: border-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-align-items: center;
+-ms-flex-align: center;
+align-items: center;
+-webkit-justify-content: space-between;
+-ms-flex-pack: justify;
+justify-content: space-between;
+}
+.tmenu-mobile__list {
+display: block;
+}
+.tmenu-mobile__burgerlogo {
+display: inline-block;
+font-size: 24px;
+font-weight: 400;
+white-space: nowrap;
+vertical-align: middle;
+}
+.tmenu-mobile__imglogo {
+height: auto;
+display: block;
+max-width: 300px!important;
+box-sizing: border-box;
+padding: 0;
+margin: 0 auto;
+}
+@media screen and (max-width: 980px) {
+.tmenu-mobile__menucontent_hidden {
+display: none;
+height: 100%;
+}
+.tmenu-mobile {
+display: block;
+}
+}
+@media screen and (max-width: 980px) {
+#rec710220242 .t-menuburger {
+-webkit-order: 1;
+-ms-flex-order: 1;
+order: 1;
+}
+}</style><style> #rec710220242 .tmenu-mobile__burgerlogo a { color: #ffffff; }</style><style> #rec710220242 .tmenu-mobile__burgerlogo__title { color: #ffffff; }</style><div id="nav710220242" class="t228 t228__positionfixed tmenu-mobile__menucontent_hidden" style="background-color: rgba(33,33,33,0.0); " data-bgcolor-hex="#212121" data-bgcolor-rgba="rgba(33,33,33,0.0)" data-navmarker="nav710220242marker" data-appearoffset="" data-bgopacity-two="100" data-menushadow="" data-menushadow-css="" data-bgopacity="0.0" data-bgcolor-rgba-afterscroll="rgba(33,33,33,1)" data-menu-items-align="center" data-menu="yes"><div class="t228__maincontainer t228__c12collumns" style=""><div class="t228__padding40px"></div><div class="t228__leftside"><div class="t228__leftcontainer"><a href="http://tilda.cc" class="t228__imgwrapper" ><div class="t228__logo t-title" field="title"><strong style="font-family: Arial;">VETRICO</strong></div></a></div></div><div class="t228__centerside "><nav class="t228__centercontainer"><ul role="list" class="t228__list t-menu__list t228__list_hidden"><li class="t228__list_item" 
+style="padding:0 15px 0 0;"><a class="t-menu__link-item" 
+href="#rec710284990" data-menu-submenu-hook="" data-menu-item-number="1"
+>Каталог</a></li><li class="t228__list_item" 
+style="padding:0 15px;"><a class="t-menu__link-item" 
+href="#rec710304984" data-menu-submenu-hook="" data-menu-item-number="2"
+>Мастерская</a></li><li class="t228__list_item" 
+style="padding:0 15px;"><a class="t-menu__link-item" 
+href="#rec711222357" data-menu-submenu-hook="" data-menu-item-number="3"
+>Новости</a></li><li class="t228__list_item" 
+style="padding:0 0 0 15px;"><a class="t-menu__link-item" 
+href="#rec710220254" data-menu-submenu-hook="" data-menu-item-number="4"
+>Контакты</a></li></ul></nav></div><div class="t228__rightside"><div class="t228__rightcontainer"><div class="t228__right_descr">+7 123 345 56 78 <br />ул. Ленина, д 17</div></div></div><div class="t228__padding40px"></div></div></div><style>@media screen and (max-width: 980px) {
+#rec710220242 .t228 {
+position: static;
+}
+}</style><script>window.addEventListener('load', function () {
+t_onFuncLoad('t228_setWidth', function () {
+t228_setWidth('710220242');
+});
+});
+window.addEventListener('resize', t_throttle(function () {
+t_onFuncLoad('t228_setWidth', function () {
+t228_setWidth('710220242');
+});
+t_onFuncLoad('t_menu__setBGcolor', function () {
+t_menu__setBGcolor('710220242', '.t228');
+});
+}));
+t_onReady(function () {
+t_onFuncLoad('t_menu__highlightActiveLinks', function () {
+t_menu__highlightActiveLinks('.t228__list_item a');
+});
+t_onFuncLoad('t_menu__findAnchorLinks', function () {
+t_menu__findAnchorLinks('710220242', '.t228__list_item a');
+});
+t_onFuncLoad('t228__init', function () {
+t228__init('710220242');
+});
+t_onFuncLoad('t_menu__setBGcolor', function () {
+t_menu__setBGcolor('710220242', '.t228');
+});
+t_onFuncLoad('t_menu__interactFromKeyboard', function () {
+t_menu__interactFromKeyboard('710220242');
+});
+t_onFuncLoad('t228_setWidth', function () {
+t228_setWidth('710220242');
+});
+t_onFuncLoad('t_menu__changeBgOpacity', function () {
+t_menu__changeBgOpacity('710220242', '.t228');
+window.addEventListener('scroll', t_throttle(function () {
+t_menu__changeBgOpacity('710220242', '.t228');
+}));
+});
+t_onFuncLoad('t_menu__createMobileMenu', function () {
+t_menu__createMobileMenu('710220242', '.t228');
+});
+});</script><!--[if IE 8]><style>#rec710220242 .t228 {
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9212121', endColorstr='#D9212121');
+}</style><![endif]--><style>#rec710220242 .t-menu__link-item{
+-webkit-transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out; 
+position: relative;
+}
+#rec710220242 .t-menu__link-item.t-active:not(.t978__menu-link){
+color:#ffffff !important; opacity:1 !important;}
+#rec710220242 .t-menu__link-item.t-active::after {
+content: '';
+position: absolute;
+left: 0;
+-webkit-transition: all 0.3s ease;
+transition: all 0.3s ease;
+opacity: 1;
+width: 100%;
+height: 100%;
+bottom: -0px;
+border-bottom: 0px solid #ffffff;
+-webkit-box-shadow: inset 0px -1px 0px 0px #ffffff;
+-moz-box-shadow: inset 0px -1px 0px 0px #ffffff;
+box-shadow: inset 0px -1px 0px 0px #ffffff;
+}
+@supports (overflow:-webkit-marquee) and (justify-content:inherit)
+{
+#rec710220242 .t-menu__link-item,
+#rec710220242 .t-menu__link-item.t-active {
+opacity: 1 !important;
+}
+}</style><style> #rec710220242 a.t-menusub__link-item { color: #ffffff; }</style><style> #rec710220242 .t228__leftcontainer a { color: #ffffff; } #rec710220242 a.t-menu__link-item { color: #ffffff; font-weight: 600; } #rec710220242 .t228__right_langs_lang a { color: #ffffff; font-weight: 600; } #rec710220242 .t228__right_descr { font-size: 18px; color: #ffffff; }</style><style> #rec710220242 .t228__logo { color: #ffffff; }</style></div><div id="rec712308067" class="r t-rec" style=" " data-animationappear="off" data-record-type="14" ><!-- cover --><div class="t-cover" id="recorddiv712308067"bgimgfield="img"style="height:100vh; background-image:-webkit-linear-gradient(top, #ccc, #777); background-image:-moz-linear-gradient(top, #ccc, #777); background-image:-o-linear-gradient(top, #ccc, #777); background-image:-ms-linear-gradient(top, #ccc, #777); background-image:linear-gradient(top, #ccc, #777);"><div class="t-cover__carrier" id="coverCarry712308067"data-content-cover-id="712308067"data-content-cover-bg=""data-display-changed="true"data-content-cover-height="100vh"data-content-cover-parallax="fixed" data-content-video-url-youtube="W1ZMuYI-4Do"style="height:100vh; "itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content=""></div><div class="t-cover__filter" style="height:100vh;background-image: -moz-linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));background-image: -o-linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));background-image: -ms-linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));background-image: linear-gradient(top, rgba(0,0,0,0.70), rgba(0,0,0,0.70));filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#4c000000', endColorstr='#4c000000');"></div><div class="t-container"><div class="t-col t-col_12 "><div class="t-cover__wrapper t-valign_middle" style="height:100vh"> <div class="t102 t-align_center" data-hook-content="covercontent"><div class="t102__title t-title" field="title">VETRICO</div><div class="t102__descr t-descr t-descr_md t102__descr_center" field="descr">Мы собираем вашу мечту</div><span class="space"></span></div></div></div></div></div><style> #rec712308067 .t102__title { text-transform: uppercase; }</style></div><div id="rec711225098" class="r t-rec t-rec_pt_60 t-rec_pb_0" style="padding-top:60px;padding-bottom:0px;background-color:#212121; " data-record-type="363" data-bg-color="#212121"><!-- T029 70 --><div class="t029"><div class="t029__container t-container"><div class="t029__col t-col t-col_12"><div class="t029__linewrapper" style="opacity:0.7;"><div class="t029__opacity t029__opacity_left" style="background-image: -moz-linear-gradient(right, #ffffff, rgba(255,255,255, 0)); background-image: -webkit-linear-gradient(right, #ffffff, rgba(255,255,255, 0)); background-image: -o-linear-gradient(right, #ffffff, rgba(255,255,255, 0)); background-image: -ms-linear-gradient(right, #ffffff, rgba(255,255,255, 0));"></div><div class="t029__line" style="background: #ffffff;"></div><div class="t029__opacity t029__opacity_right" style="background-image: -moz-linear-gradient(left, #ffffff, rgba(255,255,255, 0)); background-image: -webkit-linear-gradient(left, #ffffff, rgba(255,255,255, 0)); background-image: -o-linear-gradient(left, #ffffff, rgba(255,255,255, 0)); background-image: -ms-linear-gradient(left, #ffffff, rgba(255,255,255, 0));"></div></div></div></div></div></div><div id="rec710220247" class="r t-rec t-rec_pt_45 t-rec_pb_15" style="padding-top:45px;padding-bottom:15px;background-color:#212121; " data-animationappear="off" data-record-type="688" data-bg-color="#212121"><!-- T688 --><div class="t688"><div class="t-section__container t-container"><div class="t-col t-col_12"><div class="t-section__topwrapper t-align_center"><div class="t-section__title t-title t-title_xs" field="btitle"><div style="font-size: 82px;" data-customstyle="yes"><p style="text-align: center;"><span style="color: rgb(255, 255, 255);">Каталог</span></p></div></div> </div></div></div><div class="t-card__container t-container"><div class="t688__row" ><div class="t-col t-card__col t-card__col_withoutbtn t-col_6 t-align_left t688__featured"><div class="t688__inner-col" style=""><div class="t688__img-wrapper" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild6566-3936-4530-a536-623932623464__4.jpg"> <div class="t688__img t-bgimg" data-original="images/tild6566-3936-4530-a536-623932623464__4.jpg" 
+imgfield="li_img__1494594985229" 
+style="background-image: url('images/tild6566-3936-4530-a536-623932623464__-__resizeb__20x__4.jpg');"
+></div><div style="background-image: -moz-linear-gradient(top, rgba(0,0,0,0.0), rgba(0,0,0,0.80)); background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.0), rgba(0,0,0,0.80)); background-image: -o-linear-gradient(top, rgba(0,0,0,0.0), rgba(0,0,0,0.80)); background-image: -ms-linear-gradient(top, rgba(0,0,0,0.0), rgba(0,0,0,0.80));" class="t688__img-separator"></div></div><div class="t688__textwrapper-featured " style=";"><div class="t688__textwrapper_inner t688__sp"><div class="t-card__title t-name t-name_xl" field="li_title__1494594985229"><a 
+href="/page44228025.html" 
+class="t-card__link" 
+id="cardtitle1_710220247" 
+target="_blank" >Мозаика от производителей</a></div><style> #rec710220247 .t-card__title { font-size: 25px; }</style></div> </div></div></div><div class="t-col t-card__col t-card__col_withoutbtn t-col_6 t-align_left t688__featured"><div class="t688__inner-col" style=""><div class="t688__img-wrapper" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild3537-3734-4466-b062-613339393466__3.jpg"> <div class="t688__img t-bgimg" data-original="images/tild3537-3734-4466-b062-613339393466__3.jpg" 
+imgfield="li_img__1494594986850" 
+style="background-image: url('images/tild3537-3734-4466-b062-613339393466__-__resizeb__20x__3.jpg');"
+></div><div style="background-image: -moz-linear-gradient(top, rgba(0,0,0,0.0), rgba(0,0,0,0.80)); background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.0), rgba(0,0,0,0.80)); background-image: -o-linear-gradient(top, rgba(0,0,0,0.0), rgba(0,0,0,0.80)); background-image: -ms-linear-gradient(top, rgba(0,0,0,0.0), rgba(0,0,0,0.80));" class="t688__img-separator"></div></div><div class="t688__textwrapper-featured " style=";"><div class="t688__textwrapper_inner t688__sp"><div class="t-card__title t-name t-name_xl" field="li_title__1494594986850"><a 
+href="https://tilda.cc/" 
+class="t-card__link" 
+id="cardtitle2_710220247" 
+target="_blank" >Собственная мозаика</a></div><style> #rec710220247 .t-card__title { font-size: 25px; }</style></div> </div></div></div></div><div class="t688__row" ><div class="t-col t-card__col t-card__col_withoutbtn t-col_6 t-align_left t688__featured"><div class="t688__inner-col" style=""><div class="t688__img-wrapper" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild6636-6432-4132-b661-653338623839__photo.jpg"> <div class="t688__img t-bgimg" data-original="images/tild6636-6432-4132-b661-653338623839__photo.jpg" 
+imgfield="li_img__1549454831863" 
+style="background-image: url('images/tild6636-6432-4132-b661-653338623839__-__resizeb__20x__photo.jpg');"
+></div><div style="background-image: -moz-linear-gradient(top, rgba(0,0,0,0.0), rgba(0,0,0,0.80)); background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.0), rgba(0,0,0,0.80)); background-image: -o-linear-gradient(top, rgba(0,0,0,0.0), rgba(0,0,0,0.80)); background-image: -ms-linear-gradient(top, rgba(0,0,0,0.0), rgba(0,0,0,0.80));" class="t688__img-separator"></div></div><div class="t688__textwrapper-featured " style=";"><div class="t688__textwrapper_inner t688__sp"><div class="t-card__title t-name t-name_xl" field="li_title__1549454831863"><a 
+href="https://tilda.cc/" 
+class="t-card__link" 
+id="cardtitle3_710220247" 
+target="_blank" >Керамическая плитка</a></div><style> #rec710220247 .t-card__title { font-size: 25px; }</style></div> </div></div></div><div class="t-col t-card__col t-card__col_withoutbtn t-col_6 t-align_left t688__featured"><div class="t688__inner-col" style=""><div class="t688__img-wrapper" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild6665-3837-4534-b766-663663333261__photo.jpg"> <div class="t688__img t-bgimg" data-original="images/tild6665-3837-4534-b766-663663333261__photo.jpg" 
+imgfield="li_img__1549454834222" 
+style="background-image: url('images/tild6665-3837-4534-b766-663663333261__-__resizeb__20x__photo.jpg');"
+></div><div style="background-image: -moz-linear-gradient(top, rgba(0,0,0,0.0), rgba(0,0,0,0.80)); background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.0), rgba(0,0,0,0.80)); background-image: -o-linear-gradient(top, rgba(0,0,0,0.0), rgba(0,0,0,0.80)); background-image: -ms-linear-gradient(top, rgba(0,0,0,0.0), rgba(0,0,0,0.80));" class="t688__img-separator"></div></div><div class="t688__textwrapper-featured " style=";"><div class="t688__textwrapper_inner t688__sp"><div class="t-card__title t-name t-name_xl" field="li_title__1549454834222"><a 
+href="https://tilda.cc/" 
+class="t-card__link" 
+id="cardtitle4_710220247" 
+target="_blank" >Каталог Идей</a></div><style> #rec710220247 .t-card__title { font-size: 25px; }</style></div> </div></div></div></div></div></div><script>t_onReady(function () {
+t_onFuncLoad('t688_init', function () {
+t688_init('710220247');
+});
+t_onFuncLoad('t688_unifyHeights', function () {
+t688_unifyHeights('710220247');
+window.addEventListener('resize', t_throttle(function () {
+t688_unifyHeights('710220247');
+}));
+var rec = document.querySelector('#rec710220247');
+if (!rec) return;
+var wrapper = rec.querySelector('.t688');
+if (wrapper) {
+wrapper.addEventListener('displayChanged', function () {
+t688_unifyHeights('710220247');
+});
+}
+});
+});
+window.addEventListener('load', function () {
+t_onFuncLoad('t688_unifyHeights', function () {
+t688_unifyHeights('710220247');
+});
+});</script><style>#rec710220247 .t688__inner-col {box-shadow: 0px 0px 20px rgba(0,0,0,0);}</style><style>#rec710220247 .t688__inner-col:hover,#rec710220247 .t688__col.t-focusable .t688__inner-col,#rec710220247 .t688__featured.t-focusable .t688__inner-col {box-shadow: 0px 10px 10px rgba(0,0,0,0.9) !important;}</style></div><div id="rec710272576" class="r t-rec t-rec_pt_90 t-rec_pb_90" style="padding-top:90px;padding-bottom:90px;background-color:#212121; " data-record-type="191" data-bg-color="#212121"><!-- T142 --><div class="t142"><div class="t-container_100"><div class="t142__wrapone"><div class="t142__wraptwo"><a class="t-btn t142__submit t-btn_md"
+href="http://nanoscript/catalogue" target="" 
+style="color:#000000;border:0px solid #000000;background-color:#ffffff;border-radius:20px; -moz-border-radius:20px; -webkit-border-radius:20px;" data-buttonfieldset="button" data-btneffects-first="btneffects-ripple" ><span class="t142__text">К каталогу</span></a></div></div></div></div><script>t_onReady(function () {
+t_onFuncLoad('t142_checkSize', function () {
+t142_checkSize('710272576');
+});
+});
+window.addEventListener('load', function () {
+t_onFuncLoad('t142_checkSize', function () {
+t142_checkSize('710272576');
+});
+});</script><style>#rec710272576 .t-btn[data-btneffects-first],
+#rec710272576 .t-btn[data-btneffects-second],
+#rec710272576 .t-btn[data-btneffects-third],
+#rec710272576 .t-submit[data-btneffects-first],
+#rec710272576 .t-submit[data-btneffects-second],
+#rec710272576 .t-submit[data-btneffects-third] {
+position: relative;
+overflow: hidden;
+isolation: isolate;
+}
+#rec710272576 .t-btn[data-btneffects-first="btneffects-ripple"] .t-btn_effects,
+#rec710272576 .t-submit[data-btneffects-first="btneffects-ripple"] .t-btn_effects {
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+}
+#rec710272576 .t-btn[data-btneffects-first="btneffects-ripple"] .t-btn_effects::after,
+#rec710272576 .t-submit[data-btneffects-first="btneffects-ripple"] .t-btn_effects::after {
+content: '';
+position: absolute;
+height: 350%;
+width: 200%;
+top: 0;
+left: -100%;
+background: rgba(255, 255, 255, 0.8);
+border-radius: 100%;
+-webkit-transform: scale(0);
+-ms-transform: scale(0);
+transform: scale(0);
+z-index: 20;
+-webkit-animation-name: ripple;
+animation-name: ripple;
+-webkit-animation-duration: 6s;
+animation-duration: 6s;
+-webkit-animation-timing-function: linear;
+animation-timing-function: linear;
+-webkit-animation-iteration-count: infinite;
+animation-iteration-count: infinite;
+}
+#rec710272576 .t-btn[data-btneffects-first="btneffects-ripple"] .t-btn_effects_md::after,
+#rec710272576 .t-submit[data-btneffects-first="btneffects-ripple"] .t-btn_effects_md::after {
+left: -130%;
+}
+#rec710272576 .t-btn[data-btneffects-first="btneffects-ripple"] .t-btn_effects_lg::after,
+#rec710272576 .t-submit[data-btneffects-first="btneffects-ripple"] .t-btn_effects_lg::after {
+left: -150%;
+}
+@-webkit-keyframes ripple {
+20% {
+opacity: 0;
+-webkit-transform: scale(2.5);
+transform: scale(2.5);
+}
+100% {
+opacity: 0;
+-webkit-transform: scale(2.5);
+transform: scale(2.5);
+}
+}
+@keyframes ripple {
+20% {
+opacity: 0;
+-webkit-transform: scale(2.5);
+transform: scale(2.5);
+}
+100% {
+opacity: 0;
+-webkit-transform: scale(2.5);
+transform: scale(2.5);
+}
+}</style><script>t_onReady(function() {
+var rec = document.getElementById('rec710272576');
+if (!rec) return;
+var firstButton = rec.querySelectorAll('.t-btn[data-btneffects-first], .t-submit[data-btneffects-first]');
+Array.prototype.forEach.call(firstButton, function (button) {
+button.insertAdjacentHTML('beforeend', '<div class="t-btn_effects"></div>');
+var buttonEffect = button.querySelector('.t-btn_effects');
+if (button.offsetWidth > 260) {
+buttonEffect.classList.add('t-btn_effects_md');
+}
+if (button.offsetWidth > 360) {
+buttonEffect.classList.remove('t-btn_effects_md');
+buttonEffect.classList.add('t-btn_effects_lg');
+}
+});
+});</script></div><div id="rec712333708" class="r t-rec t-rec_pb_0" style="padding-bottom:0px; " data-animationappear="off" data-record-type="237" ><!-- cover --><div class="t-cover" id="recorddiv712333708"bgimgfield="img"style="height:90vh;background-image:url('images/tild3934-6436-4836-a639-336465636230__-__resize__20x__workshop.jpg');"><div class="t-cover__carrier" id="coverCarry712333708"data-content-cover-id="712333708"data-content-cover-bg="images/tild3934-6436-4836-a639-336465636230__workshop.jpg"data-display-changed="true"data-content-cover-height="90vh"data-content-cover-parallax="fixed"style="height:90vh; "itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="images/tild3934-6436-4836-a639-336465636230__workshop.jpg"></div><div class="t-cover__filter" style="height:90vh;background-image: -moz-linear-gradient(top, rgba(0,0,0,0.50), rgba(0,0,0,0.50));background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.50), rgba(0,0,0,0.50));background-image: -o-linear-gradient(top, rgba(0,0,0,0.50), rgba(0,0,0,0.50));background-image: -ms-linear-gradient(top, rgba(0,0,0,0.50), rgba(0,0,0,0.50));background-image: linear-gradient(top, rgba(0,0,0,0.50), rgba(0,0,0,0.50));filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#7f000000', endColorstr='#7f000000');"></div><div class="t208"><div class="t-container"><div class="t-col t-col_6 t-prefix_6"><div class="t-cover__wrapper t-valign_bottom" style="height:90vh;"><div data-hook-content="covercontent"><div class="t208__wrapper"><div class="t208__textwrapper" style="background-color: rgba(0,0,0,1);"><div class="t208__text t-text t-text_sm" field="text">В нашей мастерской вы сможете собрать мозаику сами и посмотреть - как она будет смотреться в вашем интерьере</div></div></div></div></div></div></div></div><style>#rec712333708 .t208__text {
+color: #ffffff;
+}</style></div></div><div id="rec712315192" class="r t-rec t-rec_pt_60 t-rec_pb_0" style="padding-top:60px;padding-bottom:0px;background-color:#212121; " data-record-type="363" data-bg-color="#212121"><!-- T029 70 --><div class="t029"><div class="t029__container t-container"><div class="t029__col t-col t-col_12"><div class="t029__linewrapper" style="opacity:0.7;"><div class="t029__opacity t029__opacity_left" style="background-image: -moz-linear-gradient(right, #ffffff, rgba(255,255,255, 0)); background-image: -webkit-linear-gradient(right, #ffffff, rgba(255,255,255, 0)); background-image: -o-linear-gradient(right, #ffffff, rgba(255,255,255, 0)); background-image: -ms-linear-gradient(right, #ffffff, rgba(255,255,255, 0));"></div><div class="t029__line" style="background: #ffffff;"></div><div class="t029__opacity t029__opacity_right" style="background-image: -moz-linear-gradient(left, #ffffff, rgba(255,255,255, 0)); background-image: -webkit-linear-gradient(left, #ffffff, rgba(255,255,255, 0)); background-image: -o-linear-gradient(left, #ffffff, rgba(255,255,255, 0)); background-image: -ms-linear-gradient(left, #ffffff, rgba(255,255,255, 0));"></div></div></div></div></div></div><div id="rec711224901" class="r t-rec t-rec_pt_60 t-rec_pb_0" style="padding-top:60px;padding-bottom:0px;background-color:#212121; " data-record-type="60" data-bg-color="#212121"><!-- T050 --><div class="t050"><div class="t-container t-align_center"><div class="t-col t-col_10 t-prefix_1"><div class="t050__title t-title t-title_xxl t-animate" data-animate-style="zoomin" data-animate-group="yes" field="title"><span style="color: rgb(255, 255, 255);">Новости</span></div> </div></div></div><style> #rec711224901 .t050__uptitle { text-transform: uppercase; }</style></div><div id="rec711222357" class="r t-rec t-rec_pt_0" style="padding-top:0px;background-color:#212121; " data-animationappear="off" data-record-type="994" data-bg-color="#212121"><!-- t994 --><div class="t994" ><div class="t994__btnwrapper"><button type="button" class="t994__playbtn" ><svg role="presentation" width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.28347 2.71653L23.3002 11.3002L9.28347 19.8839V11.3002L9.28347 2.71653Z" fill="#fff" /></svg></button><button type="button" class="t994__stopbtn" ><svg role="presentation" width="14" height="19" viewBox="0 0 14 19" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="0.0507812" width="4.9" height="18.9" fill="#fff"/><rect x="9.09961" y="0.0507812" width="4.9" height="18.9" fill="#fff"/></svg></button></div><div style="width: 0; height: 0; overflow: hidden;"><div class="t994__height t-width t-width_8" data-auto-correct-mobile-width="false" style="height:800px;"></div></div><ul class="t-slds__arrow_container"><li class="t-slds__arrow_wrapper t-slds__arrow_wrapper-left"><button class="t994__arrow t994__prev t-slds__arrow-withbg" style="width: 50px; height: 50px;background-color: rgba(255,255,255,0.70);"><div class="t-slds__arrow_body t-slds__arrow_body-left" style="width: 11px;"><svg role="presentation" style="display: block" viewBox="0 0 11.3 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polyline fill="none" stroke="#222" stroke-linejoin="butt" stroke-linecap="butt" stroke-width="1" points="0.5,0.5 10.5,10.5 0.5,20.5" /></svg></div></button></li><li class="t-slds__arrow_wrapper t-slds__arrow_wrapper-right"><button class="t994__arrow t994__next t-slds__arrow-withbg" style="width: 50px; height: 50px;background-color: rgba(255,255,255,0.70);"><div class="t-slds__arrow_body t-slds__arrow_body-right" style="width: 11px;"><svg role="presentation" style="display: block" viewBox="0 0 11.3 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polyline fill="none" stroke="#222" stroke-linejoin="butt" stroke-linecap="butt" stroke-width="1" points="0.5,0.5 10.5,10.5 0.5,20.5" /></svg></div></button></li></ul><div class="t994__gallery"><div class="t-container_100"><div class="t994__wrapper"><div class="t994__slider t-slds__container"><div class="t994__width-wrapper" style="height: 800px;"><ul class="t994__slidecontainer t-slds__items-wrapper" 
+id="carousel_711222357" data-auto-correct-mobile-width="false" data-slide-pos="0" data-slider-paused="yes" data-slide-offset="0" data-slider-with-cycle="false"
+style="height:800px;" data-slider-timeout="5000" 
+aria-live="off"><li class="t994__item t-slds__item t-slds__item_active" 
+role="group" 
+aria-roledescription="slide" data-slide-index="1"
+aria-label="1 из 7"><div class="t994__slds-wrapper t-slds__wrapper"><div class="t994__item-wrapper" style="background-color: #222222;"><div class="t994__bgimgwrapper"><div class="t994__bgimg t994__bgimg_first_hover t-slds__bgimg t-bgimg" data-original="images/tild3231-6131-4130-b939-306130316537__image_5.png" 
+bgimgfield="li_img__2813306118290" 
+style="background-image:url('images/tild3231-6131-4130-b939-306130316537__-__resizeb__20x__image_5.png');"
+></div><div 
+class="t994__filter" 
+style="background-image: -moz-linear-gradient(top, rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)); background-image: -webkit-linear-gradient(top, rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)); background-image: -o-linear-gradient(top, rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)); background-image: -ms-linear-gradient(top, rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)); background-image: linear-gradient(top, rgba(0,0,0, 0.5), rgba(0,0,0, 0.5));"
+></div></div><div class="t994__content t994__halign_left t994__valign_bottom"><div class="t994__textwrapper" style=""><div class="t994__title t-name t-name_xl" style="" field="li_title__2813306118290">Новости<br /><br /></div><div class="t994__descr t-text t-text_sm" style="" field="li_descr__2813306118290">Мальдивы выглядят так</div></div><div class="t994__btn-wrapper"><a href="" class="t994__btn t-btn t-btn_sm" style="color:#ffffff;background-color:#000000;" data-buttonfieldset="li_button" data-lid="2813306118290"
+><span class="t994__btn-text">Подробнее</span></a></div></div></div></div></li><li class="t994__item t-slds__item" 
+role="group" 
+aria-roledescription="slide" data-slide-index="2"
+aria-label="2 из 7"><div class="t994__slds-wrapper t-slds__wrapper"><div class="t994__item-wrapper" style="background-color: #222222;"><div class="t994__bgimgwrapper"><div class="t994__bgimg t994__bgimg_first_hover t-slds__bgimg t-bgimg" data-original="images/tild3465-3238-4032-a237-366232343162__image_8.png" 
+bgimgfield="li_img__2813306118291" 
+style="background-image:url('images/tild3465-3238-4032-a237-366232343162__-__resizeb__20x__image_8.png');"
+></div><div 
+class="t994__filter" 
+style="background-image: -moz-linear-gradient(top, rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)); background-image: -webkit-linear-gradient(top, rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)); background-image: -o-linear-gradient(top, rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)); background-image: -ms-linear-gradient(top, rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)); background-image: linear-gradient(top, rgba(0,0,0, 0.5), rgba(0,0,0, 0.5));"
+></div></div><div class="t994__content t994__halign_left t994__valign_bottom"><div class="t994__textwrapper" style="padding-bottom: 35px;"><div class="t994__title t-name t-name_xl" style="" field="li_title__2813306118291">Новость номер два</div><div class="t994__descr t-text t-text_sm" style="" field="li_descr__2813306118291">Мой большой дом</div></div></div></div></div></li><li class="t994__item t-slds__item" 
+role="group" 
+aria-roledescription="slide" data-slide-index="3"
+aria-label="3 из 7"><div class="t994__slds-wrapper t-slds__wrapper"><div class="t994__item-wrapper" style="background-color: #222222;"><div class="t994__bgimgwrapper"><div class="t994__bgimg t994__bgimg_first_hover t-slds__bgimg t-bgimg" data-original="images/tild3064-6635-4339-b236-303239643161__image_9.png" 
+bgimgfield="li_img__2813306118292" 
+style="background-image:url('images/tild3064-6635-4339-b236-303239643161__-__resizeb__20x__image_9.png');"
+></div><div 
+class="t994__filter" 
+style="background-image: -moz-linear-gradient(top, rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)); background-image: -webkit-linear-gradient(top, rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)); background-image: -o-linear-gradient(top, rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)); background-image: -ms-linear-gradient(top, rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)); background-image: linear-gradient(top, rgba(0,0,0, 0.5), rgba(0,0,0, 0.5));"
+></div></div><div class="t994__content t994__halign_left t994__valign_top"><div class="t994__textwrapper" style=""><div class="t994__title t-name t-name_xl" style="" field="li_title__2813306118292">Новость номер три</div><div class="t994__descr t-text t-text_sm" style="" field="li_descr__2813306118292">Вид на овраг</div></div></div></div></div></li><li class="t994__item t-slds__item" 
+role="group" 
+aria-roledescription="slide" data-slide-index="4"
+aria-label="4 из 7"><div class="t994__slds-wrapper t-slds__wrapper"><div class="t994__item-wrapper" style="background-color: #222222;"><div class="t994__content t994__halign_left "><div class="t994__imgwrapper " style="padding-top: 35px"><img class="t994__img t-img" 
+src="images/tild3532-3437-4736-b330-653136333561__-__empty__image_11.png" data-original="images/tild3532-3437-4736-b330-653136333561__image_11.png"
+alt=""></div><div class="t994__textwrapper" style="padding-bottom: 35px;"><div class="t994__title t-name t-name_xl" style="" field="li_title__2813306118293">Новость четыре</div><div class="t994__descr t-text t-text_sm" style="" field="li_descr__2813306118293">Что-то еще</div></div></div></div></div></li><li class="t994__item t-slds__item" 
+role="group" 
+aria-roledescription="slide" data-slide-index="5"
+aria-label="5 из 7"><div class="t994__slds-wrapper t-slds__wrapper"><div class="t994__item-wrapper" style="background-color: #222222;"><div class="t994__content t994__halign_left "><div class="t994__textwrapper" style=""><div class="t994__title t-name t-name_xl" style="" field="li_title__2813306118294">Новость номер 5</div><div class="t994__descr t-text t-text_sm" style="" field="li_descr__2813306118294">Одежда</div></div><div class="t994__imgwrapper " style="padding-bottom: 35px;"><img class="t994__img t-img" 
+src="images/tild6332-3233-4239-b237-353133666564__-__empty__pexels-cottonbro-432.png" data-original="images/tild6332-3233-4239-b237-353133666564__pexels-cottonbro-432.png"
+alt=""></div></div></div></div></li><li class="t994__item t-slds__item" 
+role="group" 
+aria-roledescription="slide" data-slide-index="6"
+aria-label="6 из 7"><div class="t994__slds-wrapper t-slds__wrapper"><div class="t994__item-wrapper" style="background-color: #222222;"><div class="t994__content t994__halign_left "><div class="t994__imgwrapper " style="padding-top: 35px"><img class="t994__img t-img" 
+src="images/tild6632-3531-4230-a230-363364623331__-__empty__image_6.png" data-original="images/tild6632-3531-4230-a230-363364623331__image_6.png"
+alt=""></div><div class="t994__textwrapper" style="padding-bottom: 35px;"><div class="t994__title t-name t-name_xl" style="" field="li_title__2813306118295">Новость номер 6</div><div class="t994__descr t-text t-text_sm" style="" field="li_descr__2813306118295">Пальма</div></div></div></div></div></li></ul></div> </div> </div></div><div class="t944__loaders-container" ><div class="t994__loader" style=""><div class="t994__loader-outer" style=""><div class="t994__loader-inner" ></div></div></div><div class="t994__loader" style=""><div class="t994__loader-outer" style=""><div class="t994__loader-inner" ></div></div></div><div class="t994__loader" style=""><div class="t994__loader-outer" style=""><div class="t994__loader-inner" ></div></div></div><div class="t994__loader" style=""><div class="t994__loader-outer" style=""><div class="t994__loader-inner" ></div></div></div><div class="t994__loader" style=""><div class="t994__loader-outer" style=""><div class="t994__loader-inner" ></div></div></div><div class="t994__loader" style=""><div class="t994__loader-outer" style=""><div class="t994__loader-inner" ></div></div></div></div></div></div><style>#rec711222357 .t994__item:not(.t-slds__item_active) {
+transform: scale(0.85); }
+@media screen and (max-width: 960px) {
+#rec711222357 .t994__item:not(.t-slds__item_active) {
+transform: scale(1);
+}
+}</style><style>#rec711222357 .t994__imgwrapper {
+padding: 0 !important;
+}</style><script>function t994_luma_rgb(color) {
+var isArray = Array.isArray(color);
+if (typeof color == 'undefined') {
+return 'black';
+}
+if (color.indexOf('rgb') != 0 && !isArray) {
+return 'black';
+}
+var rgb = isArray ? color : color.split('(')[1].split(')')[0].split(',');
+if (rgb.length < 3) {
+return 'black';
+}
+return ((0.2126 * rgb[0]) + (0.7152 * rgb[1]) + (0.0722 * rgb[2])) > 128 ? 'black' : 'white';
+}
+if (window.innerWidth < 960) {
+var loaderColor;
+var outerLoaderColor;
+loaderColor = t994_luma_rgb([34,34,34]);
+outerLoaderColor = loaderColor == 'black' ? 'rgba(0, 0, 0, 0.5)' : 'rgba(255, 255, 255, 0.5)';
+var rec = document.querySelector('#rec711222357');
+if (rec) {
+var louderOuter = rec.querySelector('.t994__loader-outer');
+var louderInner = rec.querySelector('.t994__loader-inner');
+if (louderOuter) louderOuter.style.backgroundColor = outerLoaderColor ;
+if (louderInner) louderInner.style.backgroundColor = loaderColor;
+}
+}</script><script>t_onReady(function () {
+t_onFuncLoad('t994_init', function () {
+t994_init('711222357');
+});
+});</script></div><div id="rec710310502" class="r t-rec t-rec_pt_60 t-rec_pb_0" style="padding-top:60px;padding-bottom:0px;background-color:#212121; " data-record-type="363" data-bg-color="#212121"><!-- T029 70 --><div class="t029"><div class="t029__container t-container"><div class="t029__col t-col t-col_12"><div class="t029__linewrapper" style="opacity:0.7;"><div class="t029__opacity t029__opacity_left" style="background-image: -moz-linear-gradient(right, #ffffff, rgba(255,255,255, 0)); background-image: -webkit-linear-gradient(right, #ffffff, rgba(255,255,255, 0)); background-image: -o-linear-gradient(right, #ffffff, rgba(255,255,255, 0)); background-image: -ms-linear-gradient(right, #ffffff, rgba(255,255,255, 0));"></div><div class="t029__line" style="background: #ffffff;"></div><div class="t029__opacity t029__opacity_right" style="background-image: -moz-linear-gradient(left, #ffffff, rgba(255,255,255, 0)); background-image: -webkit-linear-gradient(left, #ffffff, rgba(255,255,255, 0)); background-image: -o-linear-gradient(left, #ffffff, rgba(255,255,255, 0)); background-image: -ms-linear-gradient(left, #ffffff, rgba(255,255,255, 0));"></div></div></div></div></div></div><div id="rec712309844" class="r t-rec t-rec_pt_150 t-rec_pb_150" style="padding-top:150px;padding-bottom:150px;background-color:#212121; " data-animationappear="off" data-record-type="1056" data-bg-color="#212121"><!-- t1056 --><div class="t1056"><div class="t-section__container t-container"><div class="t-col t-col_12"><div class="t-section__topwrapper t-align_center"><div class="t-section__title t-title t-title_xs" field="btitle"><span style="color: rgb(255, 255, 255);">Наши контакты</span></div> </div></div></div><div class="t-container"><div class="t1056__row"><div class="t1056__col t-col t-col_6"> <div class="t1056__col-wrapper_first t1056__col-wrapper"><div class="t1056__name t-name t-name_md" field="li_title__3494859096042">Позвоните нам!</div><div class="t1056__text t-text t-text_md" field="li_descr__3494859096042"><span style="color: rgb(255, 255, 255);">+7 123 456 78 90</span><br /><span style="color: rgb(255, 255, 255);">vetrico@yandex.ru</span></div></div></div><div class="t1056__col t-col t-col_6"> <div class=" t1056__col-wrapper"><div class="t1056__name t-name t-name_md" field="li_title__3494859096043">Наши социальные сети</div><div class="t1056__text t-text t-text_md" field="li_descr__3494859096043"><span style="color: rgb(255, 255, 255);">TG: @vetrico WhatsApp: +7 123 456 78 90</span></div></div></div></div></div></div><style> #rec712309844 .t1056__name { color: #ffffff; }</style></div></div><!--/allrecords-->
