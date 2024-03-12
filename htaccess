@@ -1,6 +1,8 @@
 ErrorDocument 403 /404.html
 ErrorDocument 404 /404.html
 
+DirectoryIndex page44228025.html
+
 RewriteEngine On
 
 RewriteCond %{REQUEST_FILENAME} /robots.txt
